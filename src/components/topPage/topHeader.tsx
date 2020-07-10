@@ -6,7 +6,7 @@ const TopHeader: FC = () => {
   return (
     <AppBar position='static'>
       <Toolbar>
-        <h2>タイトル</h2>
+        <h2>hai-fu-</h2>
       </Toolbar>
     </AppBar>
   );

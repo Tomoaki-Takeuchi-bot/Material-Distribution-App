@@ -68,7 +68,7 @@ const DownloadPage: FC = () => {
       <div>
         {data.map((tile) => (
           <Button variant='contained' href={tile.downloadUrl}>
-            無料ダウンロード
+            ダウンロード
           </Button>
         ))}
       </div>

@@ -19,7 +19,7 @@ const useStyle = makeStyles(() =>
       position: 'relative',
       marginLeft: 'auto',
       marginRight: 'auto',
-      top: '33%',
+      top: '20%',
       width: '45%',
     },
     inputbase: {
@@ -49,7 +49,7 @@ const TopMain: FC = () => {
         </IconButton>
         <InputBase
           className={classes.inputbase}
-          placeholder='検索する文字列を入力してください'
+          placeholder='検索キーワードを入力'
           onChange={handleChange}
         />
       </Paper>
