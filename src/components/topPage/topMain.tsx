@@ -1,8 +1,3 @@
-// UI/UXはMaterial UIを活用
-// 入力フィールドの作成 Paper
-// IconButton,InputBase
-// *写真素材:Free picture
-
 import React, { FC, useState } from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
@@ -11,7 +6,6 @@ import InputBase from '@material-ui/core/InputBase';
 import Paper from '@material-ui/core/Paper';
 import SearchIcon from '@material-ui/icons/Search';
 
-// バックグラウンド写真の変更は下記URL。assetsのファイルも変更が必要。
 import papership from '../../assets/images/papership.jpg';
 
 const useStyle = makeStyles(() =>
@@ -21,8 +15,6 @@ const useStyle = makeStyles(() =>
       backgroundSize: 'cover',
       height: '100vh',
     },
-
-    // 入力欄のCSS設定
     paper: {
       position: 'relative',
       marginLeft: 'auto',
@@ -35,9 +27,6 @@ const useStyle = makeStyles(() =>
     },
   })
 );
-
-// useState hook:[保持値, 変数の値を変える関数] = useState(初期値);
-// event.target.valueにて検索窓の入力値を取得。setKeywordでkeywordに格納
 
 const TopMain: FC = () => {
   const classes = useStyle();
@@ -52,7 +41,6 @@ const TopMain: FC = () => {
     history.push('/search/' + keyword);
   };
 
-  // onChange={handleChange} で検索がエンター確定の際にヒストリー確定
   return (
     <div className={classes.background}>
       <Paper className={classes.paper} component='form' onSubmit={handleSubmit}>
@@ -61,7 +49,7 @@ const TopMain: FC = () => {
         </IconButton>
         <InputBase
           className={classes.inputbase}
-          placeholder='検索する写真素材名（例：猫）を入力してください。'
+          placeholder='検索する文字列を入力してください'
           onChange={handleChange}
         />
       </Paper>

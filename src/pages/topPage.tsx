@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-// ブラウザルーターをルータで扱う。
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import DownloadPage from './downloadPage';
 import TopHeader from '../components/topPage/topHeader';
 import TopMain from '../components/topPage/topMain';
 import ResultPage from './resultPage';
@@ -14,8 +14,11 @@ const TopPage: FC = () => {
           <TopHeader />
           <TopMain />
         </Route>
-        <Route path='/switch/:keyword' exact>
+        <Route path='/search/:keyword' exact>
           <ResultPage />
+        </Route>
+        <Route path='/download/:keyword' exact>
+          <DownloadPage />
         </Route>
       </Switch>
     </Router>
