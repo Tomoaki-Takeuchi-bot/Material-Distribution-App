@@ -1,6 +1,6 @@
 ## -簡易画像配布アプリ-
 
-## hai-fu- App
+## hai-fu-
 
 ## _(React Hooks, TypeScript, Firebase)_
 
@@ -8,15 +8,15 @@
 
 - アプリ内容
 
-  Firebase 上の写真またはデータ素材をダウンロードする簡易サイト<br>
+  Firebase 上の写真またはデータ素材をダウンロードする簡易サイト<br> \*本アプリは技術検証用ですのでローカル環境での動作用です。
 
 ---
 
 - 目的
 
-  1. ReactHook の利用
-  2. TypeScript（TSX）での作成具合の検証
-  3. mBaaS の Firebase の利用検証
+  - ReactHook の利用
+  - TypeScript（TSX）での作成具合の検証
+  - mBaaS の Firebase の利用検証
 
 - 使用言語,環境
 
@@ -47,7 +47,7 @@ npx create-react-app my-app --template typescript
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 ```
 
-- WebPack ローカルインストールされている、またはその他エラーが出る場合は
+- WebPack ローカルインストールされている、またはその他エラーが出る場合は<br>
   ディレクトリ直下に.env ファイルを設置<br>
   `SKIP_PREFLIGHT_CHECK=true` を記載してください。<br>
   上記は実行する前に公式サイトの確認をお願いします。<br>
@@ -73,9 +73,10 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 
 ---
 
-参考サイト
-[create-react-app]https://create-react-app.dev/docs/adding-typescript/
-[ステートフックの利用]https://ja.reactjs.org/docs/hooks-state.html
+### 参考サイト
+
+[create-react-app]https://create-react-app.dev/docs/adding-typescript/<br>
+[ステートフックの利用]https://ja.reactjs.org/docs/hooks-state.html<br>
 [Firebase]https://firebase.google.com/?hl=ja
 
 ---
