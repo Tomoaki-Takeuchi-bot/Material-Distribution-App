@@ -6,6 +6,8 @@
 
 ---
 
+## ![lQR5DM6oK9FcomUS2Gjj1594429691-1594429794](https://user-images.githubusercontent.com/61924934/87213405-aec9ed80-c35f-11ea-96b3-815b520eb13f.gif)
+
 - アプリ内容
 
   Firebase 上の写真またはデータ素材をダウンロードする簡易サイト<br> \*本アプリは技術検証用ですのでローカル環境での動作用です。
